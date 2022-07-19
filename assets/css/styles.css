@@ -14,6 +14,7 @@
   --input-color: hsl(var(--hue-color), 24%, 97%);
   --body-color: hsl(var(--hue-color), 100%, 99%);
   --white-color: #FFF;
+  --light-color: #00A1E9;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
@@ -279,7 +280,35 @@ input {
 }
 
 .numazust__googlemap{
-  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.tonumazuimg1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.tonumazuimg2 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.howtogo__description__title {
+text-align: left;
+margin-bottom: 0;
+}
+
+.howtogo__description__subtitle {
+text-align: left;
+margin-bottom: 20px;
+}
+
+.howtogo__description {
+text-align: left;
+padding-bottom: 20px;
+border-bottom: 1px solid #009fe9a8;
 }
 
 .home__img {
@@ -312,7 +341,17 @@ input {
 }
 
 .home__data-title{
-  color: #FFF;
+  color: #00A1E9;
+  border-color: #00A1E9;
+  -webkit-text-stroke: 1px white;
+}
+
+.home__data-titlell {
+  font-family: 'Poiret One', cursive;
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-2-5);
+  color: #E4007F;
   border-color: #00A1E9;
 }
 
@@ -404,6 +443,10 @@ input {
 
 .about__container {
   row-gap: 2.5rem;
+}
+
+.howtogo__container {
+  text-align: left;
 }
 
 .about__description {
@@ -561,6 +604,10 @@ input {
   height: 230px;
 }
 
+.gallery__img {
+  height: 180px;
+}
+
 .place__container {
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
@@ -581,6 +628,11 @@ input {
 
 .place__content, .place__title {
   color: var(--white-color);
+}
+
+.place__dark__title {
+  color: var(--light-color);
+  -webkit-text-stroke: 0.5px white;
 }
 
 .place__content {
@@ -800,7 +852,15 @@ input {
     color: var(--white-color);
     text-transform: initial;
   }
-  .nav__link:hover {
+  .nav__link__light {
+    color: var(--light-color);
+    text-transform: initial;
+  }
+  .nav__link__lightll {
+    color: #E4007F;
+    text-transform: initial;
+  }
+  .nav__link .nav__link__light .nav__link__lightll:hover {
     color: var(--white-color);
   }
   .nav__dark {
@@ -954,6 +1014,9 @@ input {
   }
   .place__card, .place__img {
     height: 263px;
+  }
+  .gallery__img {
+    height: 180px;
   }
   .footer__content {
     justify-items: center;
